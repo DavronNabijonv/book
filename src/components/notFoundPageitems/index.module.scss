@@ -1,0 +1,162 @@
+.sv {
+  position: absolute;
+  z-index: -1;
+}
+
+.ntfound {
+  width: 100%;
+  height: 100%;
+}
+
+.svggroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  .part1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0px 0 0;
+    .oy {
+      position: absolute;
+      margin: 0 20px 0 550px;
+    }
+    .chiziq {
+      position: absolute;
+      z-index: 1000;
+    }
+    .bulut1 {
+      position: absolute;
+      margin: -20px -620px 0 0;
+    }
+    .bulut2 {
+      position: absolute;
+      margin: 80px -450px 0 0;
+    }
+  }
+  .part2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .tg1 {
+      position: absolute;
+      margin: 400px 0 0 -450px;
+    }
+    .tg1qor {
+      position: absolute;
+      margin: 380px 0 0 -370px;
+    }
+    .tg2 {
+      position: absolute;
+      margin: 500px 0 0 130px;
+    }
+    .tg2qor {
+      position: absolute;
+      margin: 380px 0 0 80px;
+    }
+    .tg3 {
+      position: absolute;
+      margin: 700px -650px 0 0;
+    }
+    .tg3qor {
+      position: absolute;
+      margin: 700px -680px 0 0;
+    }
+    .qor1 {
+      position: absolute;
+      margin: 500px 0 0 0;
+    }
+    .qor2 {
+      position: absolute;
+      margin: 800px 350px 0 0;
+    }
+    .qor3 {
+      position: absolute;
+      margin: 830px -450px 0 0;
+    }
+    .l1 {
+      position: absolute;
+      margin: 610px 280px 0 0;
+    }
+    .chzq1 {
+      position: absolute;
+      margin: 700px 180px 0 0;
+    }
+    .l2 {
+      position: absolute;
+      margin: 610px 0 0 480px;
+    }
+    .chzq2 {
+      position: absolute;
+      margin: 700px 0 0 580px;
+    }
+    .aylana {
+      position: absolute;
+      margin: 720px 0 0 100px;
+    }
+    .aysetka {
+      position: absolute;
+      margin: 700px 0 0 110px;
+    }
+    .barg1 {
+      position: absolute;
+      margin: 800px 0 0 110px;
+    }
+    .barg2 {
+      position: absolute;
+      margin: 810px 0 0 148px;
+    }
+    .barg3 {
+      position: absolute;
+      margin: 798px 0 0 90px;
+    }
+    .gul {
+      position: absolute;
+      margin: 740px 0 0 56px;
+    }
+    .pastkichz {
+      position: absolute;
+      margin: 930px 0 0 80px;
+    }
+  }
+}
+
+.btnsgroup {
+  display: flex;
+  align-items: center;
+  margin: 500px 0 0 0;
+  gap: 1rem;
+  button {
+    display: flex;
+    width: 240px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid #6200ee;
+    background: #fff;
+    color: #6200ee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  button:hover{
+    background: #6200ee;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+  }
+}
+
+a{
+    text-decoration: none;
+}

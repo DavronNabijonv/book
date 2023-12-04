@@ -1,0 +1,167 @@
+.sgn {
+  display: flex;
+  .sv {
+    position: absolute;
+    z-index: -1;
+  }
+  .al {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0 0 0;
+    .boxsign {
+      border-radius: 12px;
+      background: #fefefe;
+      box-shadow: 0px 4px 32px 0px rgba(51, 51, 51, 0.04);
+      display: flex;
+      width: 430px;
+      height: auto;
+      padding: 48px 28px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 36px;
+      flex-shrink: 0;
+      .changable {
+        p {
+          color: #333;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 120%; /* 16.8px */
+        }
+        button {
+            cursor: pointer;
+          border: none;
+          background: none;
+          color: #6200EE;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 120%; /* 16.8px */
+        }
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+// umumiy qismni tugashi
+
+//  bu sign up qismi
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  .tl {
+    color: #151515;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .thrgoogle {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    button {
+      border: 1.8px solid #151515;
+      display: flex;
+      cursor: pointer;
+      gap: 1rem;
+      border-radius: 8px;
+      background: #fff;
+      align-items: center;
+      padding: 8px 55px;
+      width: 330px;
+      img {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      hr {
+        width: 120px;
+      }
+      p {
+        color: #24272c;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  //   bu yerdan boshlash kerak
+  .formpart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1rem;
+      label {
+        color: #151515;
+        align-self: stretch;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 16.8px */
+      }
+      input {
+        display: flex;
+        height: 47px;
+        padding: 14px 16px;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        align-self: stretch;
+        border-radius: 6px;
+        border: 1px solid #ebebeb;
+        width: 330px;
+        background: #fefefe;
+        box-shadow: 0px 4px 18px 0px rgba(51, 51, 51, 0.04);
+      }
+      .sbmt {
+        text-align: center;
+        background: #6200ee;
+        color: #fefefe;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// sign up qismi tugashi
