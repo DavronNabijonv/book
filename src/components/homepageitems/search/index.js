@@ -9,11 +9,10 @@ const SearchComponent = () => {
     setSearchQuery(event.target.value);
   };
 
-  const handleSearchSubmit = async (event) => {
-    event.preventDefault();
+  const handleSearchSubmit = async () => {
 
     try {
-      const response = await axios.get('http://localhost:3001/api/search', {
+      const response = await axios.get(`https://0001.uz/books/:${searchQuery}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +40,7 @@ const SearchComponent = () => {
           value={searchQuery}
           onChange={handleSearchChange}
         />
-        <button type="submit">Search</button>
+        <button type="submit" >Search</button>
       </form>
 
       <ul>

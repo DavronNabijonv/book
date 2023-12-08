@@ -11,7 +11,7 @@ export default function Modal(props) {
     publish: "",
     pages: "",
   });
-  const httpUrl = "http://localhost:3001/api/book";
+  const httpUrl = "https://0001.uz/books";
   const handleSubmit = () => {
     axios
       .post(httpUrl, theme)

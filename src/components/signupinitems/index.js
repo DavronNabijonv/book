@@ -19,21 +19,15 @@ export default function SignUpInItems() {
     pass: "",
   });
 
-  const [loggedIn, setLoggedIn] = useState(false);
   const navigate = useNavigate();
 
-  const postApi = async () => {
+  const postApi = async (event) => {
+    event.preventDefault(); // Prevent the default form submission behavior
+  
     try {
-      const response = await axios.post(
-        "http://localhost:3001/api/auth",
-        states
-      );
-      console.log("after APImcall");
-
-      if (response.data.success) {
-        navigate("home")
-      }
-
+      const response = await axios.post("https://0001.uz/signup", states);
+      console.log(response);
+      navigate("/home");
       // Handle the response data as needed
     } catch (error) {
       console.error("Error making POST request:", error);
@@ -41,6 +35,7 @@ export default function SignUpInItems() {
     }
   };
   
+
   return (
     <div className={styles.sgn}>
       <svg
@@ -75,7 +70,7 @@ export default function SignUpInItems() {
                 </div>
               </div>
               <div className={styles.formpart}>
-                <form onSubmit={postApi}>
+                <form onSubmit={(e) => postApi(e)}>
                   <label htmlFor="name">Your name</label>
                   <input
                     type="text"
@@ -120,7 +115,11 @@ export default function SignUpInItems() {
                     placeholder="Enter your password"
                     required
                   />
-                  <input type="submit" className={styles.sbmt} />
+                  <input
+                    type="submit"
+                    className={styles.sbmt}
+                    onClick={postApi}
+                  />
                 </form>
               </div>
             </div>
@@ -141,7 +140,7 @@ export default function SignUpInItems() {
                 </div>
               </div>
               <div className={styles.formpart}>
-                <form onSubmit={''}>
+                <form onSubmit={""}>
                   <label htmlFor="name">Your name</label>
                   <input
                     type="text"

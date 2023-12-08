@@ -34,11 +34,9 @@ export default function Head() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/book.json")
-      .then((response) => {
-        console.log(response.data.books); // Access the response data
-        const res = response.data.books;
-        console.log(res);
+      .get("https://0001.uz/books")
+      .then((response) => { // Access the response data
+        const res = response.data;
         setAp(res);
       })
       .catch((error) => {
@@ -60,7 +58,7 @@ export default function Head() {
   const deleteBook = async (bookId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3001/api/book/${bookId}`
+        `https://0001.uz/books/:${bookId}`
       );
       console.log(response.data); // Assuming your server returns some data upon successful deletion
       // Handle success, update state, or perform any other necessary actions

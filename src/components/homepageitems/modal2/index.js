@@ -14,7 +14,7 @@ export default function Modal2(props) {
   const updateBook = async (bookId) => {
     try {
       // Your axios.patch code here
-      const response = await axios.patch('http://localhost:3001/api/book/25', theme);
+      const response = await axios.patch(`https://0001.uz/books/:${bookId}`, theme);
       console.log('Response:', response.data);
     } catch (error) {
       console.error('Error updating book:', error);
