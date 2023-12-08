@@ -31,6 +31,7 @@ export default function SignUpInItems() {
       // Handle the response data as needed
     } catch (error) {
       console.error("Error making POST request:", error);
+      alert("server xatoligi!!!")
       // Handle the error
     }
   };
